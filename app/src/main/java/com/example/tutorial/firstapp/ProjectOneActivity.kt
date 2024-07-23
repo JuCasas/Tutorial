@@ -19,8 +19,12 @@ class ProjectOneActivity : AppCompatActivity() {
         val etName = findViewById<AppCompatEditText>(R.id.etName)
 
         btnStart.setOnClickListener {
-            Log.i("JuCasas","Ni hao ${etName.text.toString()}!")
+            val name = etName.text.toString()
+            if (name.isNotEmpty()){
+                Log.i("JuCasas","Ni hao ${name}!")
+            }
         }
+
         /*
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
