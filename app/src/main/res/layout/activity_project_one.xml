@@ -10,6 +10,8 @@
     <androidx.appcompat.widget.AppCompatEditText
         android:id="@+id/etName"
         android:layout_width="300dp"
+        android:singleLine="true"
+        android:maxLines="1"
         android:layout_height="wrap_content"
         android:layout_marginBottom="32dp"
         app:layout_constraintBottom_toTopOf="@+id/btnStart"
