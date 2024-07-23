@@ -5,6 +5,7 @@ import android.util.Log
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.AppCompatButton
+import androidx.appcompat.widget.AppCompatEditText
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.tutorial.R
@@ -15,8 +16,10 @@ class ProjectOneActivity : AppCompatActivity() {
         //enableEdgeToEdge()
         setContentView(R.layout.activity_project_one)
         val btnStart = findViewById<AppCompatButton>(R.id.btnStart)
+        val etName = findViewById<AppCompatEditText>(R.id.etName)
+
         btnStart.setOnClickListener {
-            Log.i("JuCasas","Ni hao!")
+            Log.i("JuCasas","Ni hao ${etName.text.toString()}!")
         }
         /*
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
